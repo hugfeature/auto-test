@@ -18,7 +18,7 @@ class testController{
 
 	@GetMapping("/hello")
 	public String hello() throws Exception {
-		return "大聪明";
+		return "大明";
 	}
 
 
