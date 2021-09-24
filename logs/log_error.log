@@ -1,0 +1,12 @@
+2021-09-24 09:08:23.465 [main] ERROR com.plat.auto.test.autotest.AutoTestApplication - Spring boot启动初始化了 {} 个 Bean
+2021-09-24 09:08:23.471 [main] ERROR com.plat.auto.test.autotest.AutoTestApplication - 【SpringBootDemoLogbackApplication】启动异常：
+java.lang.ArithmeticException: / by zero
+	at com.plat.auto.test.autotest.AutoTestApplication.main(AutoTestApplication.java:25)
+2021-09-24 09:09:17.952 [main] ERROR com.plat.auto.test.autotest.AutoTestApplication - Spring boot启动初始化了 {} 个 Bean
+2021-09-24 09:09:17.956 [main] ERROR com.plat.auto.test.autotest.AutoTestApplication - 【SpringBootDemoLogbackApplication】启动异常：
+java.lang.ArithmeticException: / by zero
+	at com.plat.auto.test.autotest.AutoTestApplication.main(AutoTestApplication.java:25)
+2021-09-24 09:10:50.387 [main] ERROR com.plat.auto.test.autotest.AutoTestApplication - Spring boot启动初始化了 133 个 Bean
+2021-09-24 09:10:50.390 [main] ERROR com.plat.auto.test.autotest.AutoTestApplication - 【SpringBootDemoLogbackApplication】启动异常：
+java.lang.ArithmeticException: / by zero
+	at com.plat.auto.test.autotest.AutoTestApplication.main(AutoTestApplication.java:25)
