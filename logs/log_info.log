@@ -1,0 +1,106 @@
+2021-09-24 09:08:21.532 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Starting AutoTestApplication using Java 11.0.11 on YYDK with PID 23952 (F:\auto-test\target\classes started by wangzhaoxian in F:\auto-test)
+2021-09-24 09:08:21.537 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - The following profiles are active: dev
+2021-09-24 09:08:22.826 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-24 09:08:22.841 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-24 09:08:22.842 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-24 09:08:22.845 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-24 09:08:22.928 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/auto-test] - Initializing Spring embedded WebApplicationContext
+2021-09-24 09:08:22.929 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1337 ms
+2021-09-24 09:08:23.390 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-24 09:08:23.434 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/auto-test'
+2021-09-24 09:08:23.455 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Started AutoTestApplication in 2.567 seconds (JVM running for 2.938)
+2021-09-24 09:08:23.461 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Spring boot启动初始化了 {} 个 Bean
+2021-09-24 09:09:16.154 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Starting AutoTestApplication using Java 11.0.11 on YYDK with PID 13160 (F:\auto-test\target\classes started by wangzhaoxian in F:\auto-test)
+2021-09-24 09:09:16.157 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - The following profiles are active: dev
+2021-09-24 09:09:17.409 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-24 09:09:17.423 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-24 09:09:17.425 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-24 09:09:17.426 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-24 09:09:17.515 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/auto-test] - Initializing Spring embedded WebApplicationContext
+2021-09-24 09:09:17.516 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1301 ms
+2021-09-24 09:09:17.906 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-24 09:09:17.933 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/auto-test'
+2021-09-24 09:09:17.946 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Started AutoTestApplication in 2.343 seconds (JVM running for 2.697)
+2021-09-24 09:09:17.949 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Spring boot启动初始化了 {} 个 Bean
+2021-09-24 09:10:48.600 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Starting AutoTestApplication using Java 11.0.11 on YYDK with PID 27720 (F:\auto-test\target\classes started by wangzhaoxian in F:\auto-test)
+2021-09-24 09:10:48.603 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - The following profiles are active: dev
+2021-09-24 09:10:49.764 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-24 09:10:49.775 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-24 09:10:49.777 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-24 09:10:49.778 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-24 09:10:49.887 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/auto-test] - Initializing Spring embedded WebApplicationContext
+2021-09-24 09:10:49.888 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1224 ms
+2021-09-24 09:10:50.321 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-24 09:10:50.346 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/auto-test'
+2021-09-24 09:10:50.359 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Started AutoTestApplication in 2.31 seconds (JVM running for 2.675)
+2021-09-24 09:10:50.364 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Spring boot启动初始化了 133 个 Bean
+2021-09-24 15:56:52.220 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Starting AutoTestApplication using Java 11.0.11 on YYDK with PID 29884 (F:\auto-test\target\classes started by wangzhaoxian in F:\auto-test)
+2021-09-24 15:56:52.238 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - The following profiles are active: dev
+2021-09-24 15:56:54.534 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-24 15:56:54.550 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-24 15:56:54.552 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-24 15:56:54.553 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-24 15:56:54.713 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-24 15:56:54.715 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2412 ms
+2021-09-24 15:56:54.816 [main] INFO  c.b.b.s.c.SwaggerSecurityFilterPluginsConfiguration - ==================== init swagger security filter plugin ====================
+2021-09-24 15:56:55.400 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-09-24 15:56:55.402 [main] INFO  c.b.b.s.c.SwaggerSecurityFilterPluginsConfiguration - ==================== destroy swagger security filter plugin ====================
+2021-09-24 15:56:55.438 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-09-24 15:57:47.713 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Starting AutoTestApplication using Java 11.0.11 on YYDK with PID 17880 (F:\auto-test\target\classes started by wangzhaoxian in F:\auto-test)
+2021-09-24 15:57:47.717 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - The following profiles are active: dev
+2021-09-24 15:57:49.733 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-24 15:57:49.748 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-24 15:57:49.749 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-24 15:57:49.750 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-24 15:57:49.865 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-24 15:57:49.866 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2076 ms
+2021-09-24 15:57:49.958 [main] INFO  c.b.b.s.c.SwaggerSecurityFilterPluginsConfiguration - ==================== init swagger security filter plugin ====================
+2021-09-24 15:57:50.488 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-09-24 15:57:50.491 [main] INFO  c.b.b.s.c.SwaggerSecurityFilterPluginsConfiguration - ==================== destroy swagger security filter plugin ====================
+2021-09-24 15:57:50.520 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-09-24 16:00:10.500 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Starting AutoTestApplication using Java 11.0.11 on YYDK with PID 14956 (F:\auto-test\target\classes started by wangzhaoxian in F:\auto-test)
+2021-09-24 16:00:10.506 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - The following profiles are active: dev
+2021-09-24 16:00:12.963 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-24 16:00:12.978 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-24 16:00:12.980 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-24 16:00:12.981 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-24 16:00:13.136 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-24 16:00:13.137 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2565 ms
+2021-09-24 16:00:13.234 [main] INFO  c.b.b.s.c.SwaggerSecurityFilterPluginsConfiguration - ==================== init swagger security filter plugin ====================
+2021-09-24 16:00:13.794 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-09-24 16:00:13.799 [main] INFO  c.b.b.s.c.SwaggerSecurityFilterPluginsConfiguration - ==================== destroy swagger security filter plugin ====================
+2021-09-24 16:00:13.829 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-09-24 16:02:24.108 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Starting AutoTestApplication using Java 11.0.11 on YYDK with PID 18700 (F:\auto-test\target\classes started by wangzhaoxian in F:\auto-test)
+2021-09-24 16:02:24.113 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - The following profiles are active: dev
+2021-09-24 16:02:26.014 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-24 16:02:26.027 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-24 16:02:26.029 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-24 16:02:26.030 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-24 16:02:26.146 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-24 16:02:26.147 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1964 ms
+2021-09-24 16:02:26.753 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-09-24 16:02:26.784 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-09-24 16:12:20.876 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Starting AutoTestApplication using Java 11.0.11 on YYDK with PID 10604 (F:\auto-test\target\classes started by wangzhaoxian in F:\auto-test)
+2021-09-24 16:12:20.880 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - The following profiles are active: dev
+2021-09-24 16:12:23.154 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-24 16:12:23.171 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-24 16:12:23.173 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-24 16:12:23.174 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-24 16:12:23.312 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-24 16:12:23.315 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2361 ms
+2021-09-24 16:12:23.413 [main] INFO  c.b.b.s.c.SwaggerSecurityFilterPluginsConfiguration - ==================== init swagger security filter plugin ====================
+2021-09-24 16:12:24.254 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-24 16:12:24.355 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-24 16:12:24.427 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 16:12:24.429 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-09-24 16:12:24.467 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-09-24 16:12:24.522 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-09-24 16:12:24.706 [main] INFO  com.plat.auto.test.autotest.AutoTestApplication - Started AutoTestApplication in 4.491 seconds (JVM running for 4.967)
