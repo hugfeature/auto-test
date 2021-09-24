@@ -1,0 +1,46 @@
+spring:
+  messages:
+    encoding: UTF-8
+  profiles:
+    active: dev
+  swagger:
+    enabled: true
+    title: swagger文档
+    # swagger扫描的基础包，默认：全扫描
+    # base-package:
+    # 需要处理的基础URL规则，默认：/**
+    base-package: com.plat.auto.test.autotest
+    description: 这是接口自动化测试的API 文档
+    version: 1.0.0-SNAPSHOT
+    contact:
+      name: 王兆贤
+      email: 
+    # base-path:
+    # 需要排除的URL规则，默认：空
+    # exclude-path:
+    security:
+      # 是否启用 swagger 登录验证
+      filter-plugin: true
+      username: admin
+      password: admin
+    global-response-messages:
+      GET:
+      - code: 400
+        message: Bad Request，一般为请求参数不对
+      - code: 404
+        message: NOT FOUND，一般为请求路径不对
+      - code: 500
+        message: ERROR，一般为程序内部错误
+      POST:
+      - code: 400
+        message: Bad Request，一般为请求参数不对
+      - code: 404
+        message: NOT FOUND，一般为请求路径不对
+      - code: 500
+        message: ERROR，一般为程序内部错误
+     
+
+
+
+
+    
