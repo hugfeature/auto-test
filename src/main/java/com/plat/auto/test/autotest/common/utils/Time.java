@@ -18,16 +18,14 @@ public class Time {
     public   String getDateWithMilss(){
         DateTime dateMills = DateUtil.date(System.currentTimeMillis());
         String dateString = DateUtil.format(dateMills, "yyyy-MM-dd HH:mm:ss.SSS");
+        log.info("dateString");
         return dateString;
     }
     
-    public static  String getDate(){
+    public   String getDate(){
         String dateString = DateUtil.now();
+        log.info("dateString");
         return dateString;
-    }
-
-    public static void main(String[] args){
-        log.info(getDate());
     }
 }
 
