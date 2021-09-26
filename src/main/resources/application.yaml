@@ -3,6 +3,7 @@ spring:
     encoding: UTF-8
   profiles:
     active: dev
+  # 请求地址：http://localhost:8080/swagger-ui.html#/
   swagger:
     enabled: true
     title: swagger文档
