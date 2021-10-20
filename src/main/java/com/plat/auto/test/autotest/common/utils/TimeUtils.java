@@ -12,7 +12,7 @@ import cn.hutool.core.date.DateUtil;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class Time {
+public class TimeUtils {
 
    
     public   String getDateWithMilss(){
