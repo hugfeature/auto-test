@@ -7,9 +7,9 @@
  */
 package com.plat.auto.test.autotest.common.util;
 
-import java.lang.reflect.Array;
-
 import lombok.extern.slf4j.Slf4j;
+
+import java.lang.reflect.Array;
 
 
 @Slf4j
@@ -27,10 +27,11 @@ public class ArrayUtil {
         return getLength(array) == 0;
     }
 
-    public static boolean isNotEmpt (final Object[] array){
+    public static boolean isNotEmpt(final Object[] array) {
         return !isEmpty(array);
     }
-    public static int indexOf(final Object[] array, final Object objectWant){
+
+    public static int indexOf(final Object[] array, final Object objectWant) {
         if (isEmpty(array)) {
             log.info(array + "数组为空");
             return INDEX_NOT_FOUND;
@@ -44,7 +45,7 @@ public class ArrayUtil {
         return INDEX_NOT_FOUND;
     }
 
-    public static boolean contains(final Object[] array, final Object objectWant){
+    public static boolean contains(final Object[] array, final Object objectWant) {
         return indexOf(array, objectWant) != INDEX_NOT_FOUND;
     }
 
