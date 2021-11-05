@@ -4,17 +4,15 @@ import lombok.Data;
 
 /**
  * @author: wangzhaoxian
- * @date: 2021/11/1
+ * @date: 2021/11/5
  * @description
  */
 @Data
-public class ApiDataTypeToFiled {
+public class Biz {
     private int id;
     /**
-     *
+     * 业务名称
      */
-    private int parentDataTypeId;
-    private String filedName;
-    private String filedAbout;
-
+    private String bizName;
+    private int order;
 }

@@ -5,7 +5,7 @@
  * @LastEditTime: 2021-10-26 15:27:08
  * @Description: 数组工具类
  */
-package com.plat.auto.test.autotest.common.util;
+package com.plat.auto.test.autotest.util;
 
 import lombok.extern.slf4j.Slf4j;
 

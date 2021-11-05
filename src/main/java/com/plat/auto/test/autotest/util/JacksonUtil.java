@@ -1,4 +1,4 @@
-package com.plat.auto.test.autotest.common.util;
+package com.plat.auto.test.autotest.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -15,10 +15,10 @@ import java.util.Map;
  */
 @Slf4j
 public class JacksonUtil {
-    private final  static ObjectMapper objectMapper = new ObjectMapper();
+    private final  static ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     public  static  ObjectMapper getInstance(){
-        return objectMapper;
+        return OBJECT_MAPPER;
     }
 
     public static  String writeValueAsString(Object object){

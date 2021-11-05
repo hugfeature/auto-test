@@ -1,5 +1,5 @@
 
-package com.plat.auto.test.autotest.common.util;
+package com.plat.auto.test.autotest.util;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -64,9 +64,9 @@ public class CookieUtil {
      * @Author: 丑牛
      */
 	private static Cookie get(HttpServletRequest request, String key) {
-		Cookie[] arr_cookie = request.getCookies();
-		if (arr_cookie != null && arr_cookie.length > 0) {
-			for (Cookie cookie : arr_cookie) {
+		Cookie[] arrCookie = request.getCookies();
+		if (arrCookie != null && arrCookie.length > 0) {
+			for (Cookie cookie : arrCookie) {
 				if (cookie.getName().equals(key)) {
 					return cookie;
 				}

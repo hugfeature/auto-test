@@ -23,7 +23,7 @@ import lombok.extern.slf4j.Slf4j;
 
 
 @RestController
-@Api(tags = "1.0.0-SNAPSHOT", description = "用户管理", value = "用户管理")
+@Api(tags = "1.0.0-SNAPSHOT",  value = "用户管理接口")
 @Slf4j
 public class HelloController {
 

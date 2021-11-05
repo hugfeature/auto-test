@@ -5,7 +5,7 @@
  * @LastEditTime: 2021-10-26 16:16:10
  * @Description: 抛出异常处理
  */
-package com.plat.auto.test.autotest.common.util;
+package com.plat.auto.test.autotest.util;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

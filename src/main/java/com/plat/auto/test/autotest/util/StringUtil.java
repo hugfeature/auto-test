@@ -6,7 +6,7 @@
  * @Description: ①final修饰的基本数据类型的值是不能够改变的；
  *               ② 字符串工具类
  */
-package com.plat.auto.test.autotest.common.util;
+package com.plat.auto.test.autotest.util;
 
 import java.util.ArrayList;
 import java.util.List;
