@@ -7,7 +7,7 @@
  */
 package com.plat.auto.test.autotest.webTest;
 
-import com.plat.auto.test.autotest.web.HelloController;
+import com.plat.auto.test.autotest.controller.HelloController;
 
 import org.junit.Before;
 import org.junit.Test;

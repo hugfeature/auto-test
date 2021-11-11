@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>cn.hutool</groupId>
 			<artifactId>hutool-all</artifactId>
-			<version>5.7.11</version>
+			<version>5.7.15</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.battcn/swagger-spring-boot-starter 第三方swagger美化-->
@@ -55,6 +55,12 @@
 			<groupId>com.battcn</groupId>
 			<artifactId>swagger-spring-boot-starter</artifactId>
 			<version>2.1.5-RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter 引入mybatis -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>2.2.0</version>
 		</dependency>
 
 		<!-- java.lang.ClassNotFoundException: javax.xml.bind.JAXBException/javax.xml.bind.annotation.XmlType问题解决 -->
