@@ -42,7 +42,13 @@ public class LoginService {
         }
         return user;
     }
-
+    /**
+     * @Description: login
+     * @Param: [response, userNameParam, passwordParam, ifRemember]
+     * @return: com.plat.auto.test.autotest.entity.ReturnT<java.lang.String>
+     * @Author: wangzhaoxian
+     * @Date: 2021/11/12
+     */
     public ReturnT<String> login(HttpServletResponse response, String userNameParam, String passwordParam, boolean ifRemember) {
         User user = userMapper.findByUserName(userNameParam);
         if (user == null) {
@@ -56,11 +62,23 @@ public class LoginService {
         CookieUtil.set(response, LOGIN_IDENTITY, loginToken, ifRemember);
         return ReturnT.SUCCESS;
     }
-
+    /**
+     * @Description: logout
+     * @Param: [request, response]
+     * @return: void
+     * @Author: wangzhaoxian
+     * @Date: 2021/11/12
+     */
     public void logout(HttpServletRequest request, HttpServletResponse response) {
         CookieUtil.remove(request, response, LOGIN_IDENTITY);
     }
-
+/**
+ * @Description:  logout
+ * @Param: [request]
+ * @return: com.plat.auto.test.autotest.entity.User
+ * @Author: wangzhaoxian
+ * @Date: 2021/11/12
+ */
     public User ifLogin(HttpServletRequest request) {
         String cookieToken = CookieUtil.getValue(request, LOGIN_IDENTITY);
         if (cookieToken != null) {
