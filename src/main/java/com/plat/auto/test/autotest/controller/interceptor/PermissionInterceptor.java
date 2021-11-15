@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Component
 public class PermissionInterceptor implements HandlerInterceptor {
+
     @Resource
     private LoginService loginService;
 

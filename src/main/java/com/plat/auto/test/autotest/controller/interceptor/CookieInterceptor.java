@@ -21,7 +21,7 @@ public class CookieInterceptor implements HandlerInterceptor {
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object hadler,
                            ModelAndView modelAndView) throws Exception{
         if (modelAndView != null && ArrayUtil.isNotEmpt(request.getCookies())){
-            HashMap<String, Cookie> cookieHashMap = new HashMap<String, Cookie>();
+            HashMap<String, Cookie> cookieHashMap = new HashMap<>();
             for (Cookie cookie: request.getCookies()
                  ) {
                 cookieHashMap.put(cookie.getName(), cookie);
