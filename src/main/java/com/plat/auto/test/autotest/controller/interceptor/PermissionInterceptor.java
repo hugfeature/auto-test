@@ -1,5 +1,6 @@
-package com.plat.auto.test.autotest.controller;
+package com.plat.auto.test.autotest.controller.interceptor;
 
+import com.plat.auto.test.autotest.controller.annotation.PermessionLimit;
 import com.plat.auto.test.autotest.entity.User;
 import com.plat.auto.test.autotest.service.LoginService;
 import org.springframework.stereotype.Component;

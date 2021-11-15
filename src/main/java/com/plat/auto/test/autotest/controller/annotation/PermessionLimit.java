@@ -1,4 +1,4 @@
-package com.plat.auto.test.autotest.controller;
+package com.plat.auto.test.autotest.controller.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

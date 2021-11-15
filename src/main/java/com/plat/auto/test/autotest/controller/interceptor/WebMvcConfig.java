@@ -1,5 +1,7 @@
-package com.plat.auto.test.autotest.controller;
+package com.plat.auto.test.autotest.controller.interceptor;
 
+import com.plat.auto.test.autotest.controller.interceptor.CookieInterceptor;
+import com.plat.auto.test.autotest.controller.interceptor.PermissionInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

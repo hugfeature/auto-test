@@ -1,4 +1,4 @@
-package com.plat.auto.test.autotest.controller;
+package com.plat.auto.test.autotest.controller.interceptor;
 
 import com.plat.auto.test.autotest.util.ArrayUtil;
 import org.springframework.stereotype.Component;
