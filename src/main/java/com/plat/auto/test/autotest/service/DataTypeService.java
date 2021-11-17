@@ -5,6 +5,6 @@ import com.plat.auto.test.autotest.entity.DataType;
 /**
  * @author wangzhaoxian
  */
-public interface IDataTypeService {
+public interface DataTypeService {
     DataType loadDataType(int dataTypeId);
 }

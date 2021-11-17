@@ -46,7 +46,7 @@ public class Document {
     /**
      * Request Headers：Map-JSON格式字符串
      */
-    private String requetHeaders;
+    private String requestHeaders;
     /**
      * Query String Parameters：VO-JSON格式字符串
      */
@@ -54,7 +54,7 @@ public class Document {
     /**
      * 响应数据类型ID
      */
-    private int responseDataType;
+    private int responseDataTypeId;
     /**
      * Response Parameters：VO-JSON格式字符串
      */

@@ -17,7 +17,7 @@ import java.util.List;
  */
 @Service
 @Slf4j
-public class DataTypeServiceImpl implements IDataTypeService {
+public class DataTypeServiceImpl implements DataTypeService {
     @Resource
     private DataTypeMapper dataTypeMapper;
     @Resource
