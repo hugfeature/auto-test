@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.plat.auto.test.autotest.mapper.ProjectMapper">
+	
+	<resultMap id="Project" type="com.plat.auto.test.autotest.entity.Project" >
+		<result column="id" property="id" />
+		<result column="name" property="name" />
+	    <result column="desc" property="desc" />
+	    <result column="base_url_product" property="baseProjectUrl" />
+		<result column="base_url_ppe" property="basePpeUrl" />
+		<result column="base_url_qa" property="baseQaUrl" />
+		<result column="biz_id" property="bizId" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		t.id,
+		t.name,
+		t.desc,
+		t.base_url_product,
+		t.base_url_ppe,
+		t.base_url_qa,
+		t.biz_id
+	</sql>
+
+	<insert id="add" parameterType="com.plat.auto.test.autotest.entity.Project" useGeneratedKeys="true" keyProperty="id" >
+		INSERT INTO `xxl-api`.xxl_api_project (
+			`name`,
+			`desc`,
+			base_url_product,
+			base_url_ppe,
+			base_url_qa,
+			biz_id
+		) VALUES (
+			#{name},
+			#{desc},
+			#{baseProjectUrl},
+			#{basePpeUrl},
+			#{baseQaUrl},
+			#{bizId}
+		);
+	</insert>
+
+	<update id="update" parameterType="com.plat.auto.test.autotest.entity.Project" >
+		UPDATE `xxl-api`.xxl_api_project
+		SET
+			`name` = #{name},
+			`desc` = #{desc},
+			base_url_product = #{baseProjectUrl},
+			base_url_ppe = #{basePpeUrl},
+			base_url_qa = #{baseQaUrl},
+			biz_id = #{bizId}
+		WHERE id = #{id}
+	</update>
+
+	<delete id="delete" parameterType="java.lang.Integer" >
+		DELETE FROM `xxl-api`.xxl_api_project
+		WHERE id = #{id}
+	</delete>
+
+	<select id="load" parameterType="java.lang.Integer" resultMap="Project">
+		SELECT <include refid="Base_Column_List" />
+		FROM `xxl-api`.xxl_api_project AS t
+		WHERE t.id = #{id}
+	</select>
+
+
+	<select id="pageList" parameterType="java.util.Map" resultMap="Project">
+		SELECT <include refid="Base_Column_List" />
+		FROM `xxl-api`.xxl_api_project AS t
+		<trim prefix="WHERE" prefixOverrides="AND | OR" >
+			<if test="name != null and name != ''">
+				AND t.name like CONCAT(CONCAT('%', #{name}), '%')
+			</if>
+			<if test="bizId gte 0" >
+				AND t.biz_id = #{bizId}
+			</if>
+		</trim>
+		order by id desc
+		limit #{offset}, #{pageSize}
+	</select>
+
+	<select id="pageListCount" parameterType="java.util.Map" resultType="int">
+		SELECT count(1)
+		FROM `xxl-api`.xxl_api_project AS t
+		<trim prefix="WHERE" prefixOverrides="AND | OR" >
+			<if test="name != null and name != ''">
+				AND t.name like CONCAT(CONCAT('%', #{name}), '%')
+			</if>
+			<if test="bizId gte 0" >
+				AND t.biz_id = #{bizId}
+			</if>
+		</trim>
+	</select>
+
+
+</mapper>

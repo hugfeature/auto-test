@@ -21,7 +21,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
 		<!-- 使用注解简化java代码 -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -68,7 +71,11 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.5.13</version>
 		</dependency>
-
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.26</version>
+		</dependency>
 		<!-- java.lang.ClassNotFoundException: javax.xml.bind.JAXBException/javax.xml.bind.annotation.XmlType问题解决 -->
 		<dependency>
 			<groupId>javax.xml.bind</groupId>

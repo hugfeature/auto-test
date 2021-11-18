@@ -1,4 +1,37 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /auto-test
+mybatis:
+  mapper-locations: classpath:/mybatis-mapper/*Mapper.xml
+#  type-aliases-package: com.plat.auto.test.autotest.entity
 spring:
+  mvc:
+    static-path-pattern: /static/**
+  freemarker:
+    template-loader-path: classpath:/templates/
+    suffix: .ftl
+    charset: UTF-8
+    settings:
+      number_format: 0.##########
+    request-context-attribute: request
+    cache: false
+  datasource:
+    url: jdbc:mysql://zmjkf.cn:9513/xxl-api?Unicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false
+#    url: jdbc:mysql://192.168.175.216:3306/xxl-api?Unicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 5
+      connection-test-query: SELECT 1 FROM DUAL
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: SpringBootDemoHikariCP
+      max-lifetime: 60000
+      connection-timeout: 30000
   messages:
     encoding: UTF-8
   profiles:
@@ -21,7 +54,7 @@ spring:
     # exclude-path:
     security:
       # 是否启用 swagger 登录验证
-      filter-plugin: true
+      filter-plugin: false
       username: admin
       password: admin
     global-response-messages:
@@ -39,9 +72,4 @@ spring:
         message: NOT FOUND，一般为请求路径不对
       - code: 500
         message: ERROR，一般为程序内部错误
-     
 
-
-
-
-    

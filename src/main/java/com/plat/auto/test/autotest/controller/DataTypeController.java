@@ -14,6 +14,7 @@ import com.plat.auto.test.autotest.util.JacksonUtil;
 import com.plat.auto.test.autotest.util.StringUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,6 +35,7 @@ import java.util.Map;
 @Controller
 @Api(tags = "1.0.0-SNAPSHOT", value = "数据类型接口")
 @RequestMapping("/dataType")
+@Slf4j
 public class DataTypeController {
     @Resource
     private DataTypeMapper dataTypeMapper;
@@ -169,7 +171,7 @@ public class DataTypeController {
         }
         List<Biz> bizs = bizMapper.loadAll();
         model.addAttribute("bizList", bizs);
-        return "dataType/dataType.upddate";
+        return "dataType/dataType.update";
     }
 
     @RequestMapping("/updateDataType")

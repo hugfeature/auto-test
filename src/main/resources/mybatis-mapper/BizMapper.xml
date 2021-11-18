@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.plat.auto.test.autotest.mapper.BizMapper">
+	
+	<resultMap id="Biz" type="com.plat.auto.test.autotest.entity.Biz" >
+		<result column="id" property="id" />
+		<result column="biz_name" property="bizName" />
+	    <result column="order" property="order" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		t.id,
+		t.biz_name,
+		t.order
+	</sql>
+
+	<insert id="add" parameterType="com.plat.auto.test.autotest.entity.Biz" useGeneratedKeys="true" keyProperty="id" >
+		INSERT INTO `xxl-api`.xxl_api_biz (
+			`biz_name`,
+			`order`
+		) VALUES (
+			#{bizName},
+			#{order}
+		);
+	</insert>
+
+	<update id="update" parameterType="com.plat.auto.test.autotest.entity.Biz" >
+		UPDATE `xxl-api`.xxl_api_biz
+		SET
+			`biz_name` = #{bizName},
+			`order` = #{order}
+		WHERE id = #{id}
+	</update>
+
+	<delete id="delete" parameterType="java.lang.Integer" >
+		DELETE FROM `xxl-api`.xxl_api_biz
+		WHERE id = #{id}
+	</delete>
+
+	<select id="loadAll" parameterType="java.lang.Integer" resultMap="Biz">
+		SELECT <include refid="Base_Column_List" />
+		FROM `xxl-api`.xxl_api_biz AS t
+		ORDER BY t.order
+	</select>
+
+	<select id="pageList" parameterType="java.util.Map" resultMap="Biz">
+		SELECT <include refid="Base_Column_List" />
+		FROM `xxl-api`.xxl_api_biz AS t
+		<trim prefix="WHERE" prefixOverrides="AND | OR" >
+			<if test="bizName != null and bizName != ''">
+				AND t.biz_name like CONCAT(CONCAT('%', #{bizName}), '%')
+			</if>
+		</trim>
+		ORDER BY t.`order` ASC
+		LIMIT #{offset}, #{pages}
+	</select>
+
+	<select id="pageListCount" parameterType="java.util.Map" resultType="int">
+		SELECT count(1)
+		FROM `xxl-api`.xxl_api_biz AS t
+		<trim prefix="WHERE" prefixOverrides="AND | OR" >
+			<if test="bizName != null and bizName != ''">
+				AND t.biz_name like CONCAT(CONCAT('%', #{bizName}), '%')
+			</if>
+		</trim>
+	</select>
+
+	<select id="load" parameterType="java.util.Map" resultMap="Biz">
+		SELECT <include refid="Base_Column_List" />
+		FROM `xxl-api`.xxl_api_biz AS t
+		WHERE id = #{id}
+	</select>
+
+</mapper>

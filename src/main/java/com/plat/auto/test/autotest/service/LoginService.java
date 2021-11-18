@@ -5,6 +5,7 @@ import com.plat.auto.test.autotest.entity.User;
 import com.plat.auto.test.autotest.mapper.UserMapper;
 import com.plat.auto.test.autotest.util.CookieUtil;
 import com.plat.auto.test.autotest.util.JacksonUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.DigestUtils;
 
@@ -19,6 +20,7 @@ import java.math.BigInteger;
  * @description
  */
 @Configuration
+@Slf4j
 public class LoginService {
     public static final String LOGIN_IDENTITY = "LOGIN_IDENTITY";
     @Resource
@@ -52,11 +54,12 @@ public class LoginService {
     public ReturnT<String> login(HttpServletResponse response, String userNameParam, String passwordParam, boolean ifRemember) {
         User user = userMapper.findByUserName(userNameParam);
         if (user == null) {
-            return new ReturnT<String>(500, "账号或密码错误");
+            return new ReturnT<>(500, "账号或密码错误");
         }
         String passWordParamMd5 = DigestUtils.md5DigestAsHex(passwordParam.getBytes());
+        log.info(">>>>>>>>>>" , passwordParam);
         if (!user.getPassWord().equals(passWordParamMd5)) {
-            return new ReturnT<String>(500, "账号或密码错误");
+            return new ReturnT<>(500, "账号或密码错误");
         }
         String loginToken = makeToken(user);
         CookieUtil.set(response, LOGIN_IDENTITY, loginToken, ifRemember);

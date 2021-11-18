@@ -62,6 +62,9 @@ public class IndexController {
         if (StringUtil.isNotBlank(ifRemember) && "on".equals(ifRemember)) {
             ifRem = true;
         }
+        log.info("username>>>>>>>>>>>>" + userName );
+        log.info("ifRemember>>>>>>>>>>>>" + ifRemember );
+        log.info("passWord>>>>>>>>>>>>" + passWord );
         ReturnT<String> loginRet = loginService.login(response, userName, passWord, ifRem);
         return loginRet;
     }

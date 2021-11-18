@@ -10,6 +10,7 @@ import com.plat.auto.test.autotest.util.ArrayUtil;
 import com.plat.auto.test.autotest.util.StringUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,6 +31,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("/project")
 @Api(tags = "1.0.0-SNAPSHOT", value = "项目接口")
+@Slf4j
 public class ProjectController {
     @Resource
     private ProjectMapper projectMapper;

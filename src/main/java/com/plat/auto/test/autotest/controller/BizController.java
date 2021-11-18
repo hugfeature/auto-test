@@ -9,6 +9,7 @@ import com.plat.auto.test.autotest.mapper.ProjectMapper;
 import com.plat.auto.test.autotest.util.StringUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,6 +29,7 @@ import java.util.Map;
 @Controller
 @Api(tags = "1.0.0-SNAPSHOT", value = "业务接口")
 @RequestMapping("/biz")
+@Slf4j
 public class BizController {
     @Resource
     private BizMapper bizMapper;
