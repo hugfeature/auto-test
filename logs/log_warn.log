@@ -1,0 +1,3 @@
+2021-11-24 10:10:57.526 [http-nio-8080-exec-4] WARN  org.springframework.web.servlet.PageNotFound - No mapping for GET /auto-test/blue.png
+2021-11-24 10:22:18.299 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.PageNotFound - No mapping for GET /auto-test/bull.png
+2021-11-24 10:22:33.303 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.PageNotFound - No mapping for GET /auto-test/bull.png
