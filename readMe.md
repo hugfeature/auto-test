@@ -1,9 +1,5 @@
 # 接口自动化测试
 
-## 流程图
-
-![](C:\Users\wangzhaoxian\Downloads\接口自动化测试流程图.png)
-
 ## DONE：
 
 1. 日志管理
